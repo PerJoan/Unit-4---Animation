@@ -6,8 +6,8 @@
 
 
 	#myContainer {
-		width: 1000px;
-		height: 1000px;
+		width: 1350px;
+		height: 1300px;
 		text-align: center;
 		position: relative;
 		background: -webkit-linear-gradient(bottom, rgba(153,61,0, 1), rgba(54, 113, 176, 0.4));
@@ -22,21 +22,73 @@
 	img {
 		border-radius: 50%;
 	}
+	nav {
+		font-family: futura;
+	}
+
+			/* Dropdown Button */
+.dropbutton {
+    background-color:;
+    color: ;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.downmenu {
+    display: none;
+    position: ;
+    background-color:
+    
+    
+}
+
+/* Links inside the dropdown */
+.dropdown:hover .downmenu{
+	display:block;
+}
+
+
+
+
 </style>	
 </head>
 
 <body>
 
 
+
+
 <div id="myContainer">
-<h1 style="color: rgb(153,61,0); font-family: luminari;">So Many Beautiful Beaches in the Caribbean</h1>
+<h1 style="color: rgb(153,61,0); font-family: luminari; padding-top: 30px;">So Many Beautiful Beaches in the Caribbean</h1>
+
+
+
+<div class="dropdown">
+<div><button style="padding:10px; border-radius: 10%; background-color: yellow;" class="dropbutton">Choose An Island</button>
+<div><nav class="downmenu">
+	Anguilla<br>
+	Aruba<br>
+	Bahamas<br>
+	Jamaica<br>
+</nav>
+</div>
+</div>
+</div>
+
 
 <div id="myAnimation">
 <img  src="http://www.postcardlocker.com/images/PCU4191.jpg">
 </div>
 </div>
 
-<button onclick="Move()">Click Me</button>
+<center>
+<button style="padding: 10px; border-radius: 10%; background-color: yellow;" onclick="Move()">Click Me</button>
+</center>
 
 
 
